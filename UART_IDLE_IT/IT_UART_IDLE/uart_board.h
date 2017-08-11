@@ -17,7 +17,6 @@ Maintainer: Derek Chen
 
 #include "stm32l0xx_hal.h"
 #include "stm32l0xx_hal_uart.h"
-#include "fifo.h"
 
 #define USARTx                            USART1
 #define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();

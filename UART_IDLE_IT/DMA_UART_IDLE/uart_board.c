@@ -9,15 +9,11 @@ Maintainer: Derek Chen
 #include <stdio.h>
 #include "uart_board.h"
 #include "stm32l0xx_hal.h"
-#include "loraMAC_osal.h"
-#include "error.h"
-#include "osal.h"
-#include "at.h"
 
 #define UART1_RX_BUF_SIZE  128
 #define UART1_DMA_TX_CACHE  1024
 
-extern UART_HandleTypeDef UartHandle;
+UART_HandleTypeDef UartHandle;
 
 uart_t uart1;
 uint8_t uart1_buf[UART1_RX_BUF_SIZE] = {0};
